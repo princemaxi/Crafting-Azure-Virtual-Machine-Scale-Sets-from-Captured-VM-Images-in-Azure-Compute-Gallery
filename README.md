@@ -58,15 +58,18 @@ Before you begin, ensure that you have the following prerequisites in place:
 1. **Log in to the Azure Portal**: Go to the [Azure Portal home page](https://portal.azure.com/) and sign in with your credentials.
 
 ![image](https://github.com/user-attachments/assets/ec114d4a-512c-40e5-b043-4a3bfe4404e8)
-3. Click on 'Create a resource' and search for 'Virtual Machine Scale Set'. Select it.
+
+2. Click on 'Create a resource' and search for 'Virtual Machine Scale Set'. Select it.
 
 ![image](https://github.com/user-attachments/assets/e9caf624-d31d-43ea-89e7-295ac02b8b19)
+
 ![image](https://github.com/user-attachments/assets/ed1808cb-2352-4256-b33e-a1d14b0c5e49)
 
-4. Click on 'Create'.
+3. Click on 'Create'.
+y
 ![image](https://github.com/user-attachments/assets/caf39d95-89ab-43b8-b65a-ee00bf92e0b6)
 
-6. Basics: Fill out the basic information, such as the subscription, resource group, and region. Give your VMSS a unique name.
+4. Basics: Fill out the basic information, such as the subscription, resource group, and region. Give your VMSS a unique name.
 
 ![image](https://github.com/user-attachments/assets/616b3436-53f0-4384-9c2e-cd1dff72262e)
 
@@ -157,8 +160,3 @@ In this comprehensive guide, we've explored the process of creating a Virtual Ma
 VMSS and Compute Gallery are indispensable tools in your cloud infrastructure toolbox, empowering you to deploy, manage, and scale virtual machines efficiently. As you embark on your cloud journey, remember that flexibility and scalability are your allies, and Azure is your trusted partner in achieving your goals.
 
 Embrace the power of Azure VMSS and Compute Gallery to unlock the true potential of your cloud applications. Scale up, scale out, and scale confidently with Microsoft Azure.
-
-
-
-
-
