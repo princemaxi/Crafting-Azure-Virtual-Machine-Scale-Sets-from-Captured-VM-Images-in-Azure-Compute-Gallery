@@ -151,7 +151,7 @@ This is the newly deployed Virtual Machine Scale Set and you can see 2 initial i
 
 # Monitor and Manage Your VMSS
 
-Once your VMSS is deployed, you can use Azure Monitor and Azure Autoscale to ensure your application scales efficiently and is highly available. Azure Monitor helps you gain insights into your VMSS's performance, while Autoscale allows you to automate scaling based on metrics and schedules._
+Once your VMSS is deployed, you can use Azure Monitor and Azure Autoscale to ensure your application scales efficiently and is highly available. Azure Monitor helps you gain insights into your VMSS's performance, while Autoscale allows you to automate scaling based on metrics and schedules.
 
 # Conclusion
 
