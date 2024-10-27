@@ -56,13 +56,18 @@ Before you begin, ensure that you have the following prerequisites in place:
 # Creating a VM Scale Set
 
 1. **Log in to the Azure Portal**: Go to the [Azure Portal home page](https://portal.azure.com/) and sign in with your credentials.
+
 ![image](https://github.com/user-attachments/assets/ec114d4a-512c-40e5-b043-4a3bfe4404e8)
-2.  Click on 'Create a resource' and search for 'Virtual Machine Scale Set'. Select it.
+3. Click on 'Create a resource' and search for 'Virtual Machine Scale Set'. Select it.
+
 ![image](https://github.com/user-attachments/assets/e9caf624-d31d-43ea-89e7-295ac02b8b19)
 ![image](https://github.com/user-attachments/assets/ed1808cb-2352-4256-b33e-a1d14b0c5e49)
-3. Click on 'Create'.
+
+4. Click on 'Create'.
 ![image](https://github.com/user-attachments/assets/caf39d95-89ab-43b8-b65a-ee00bf92e0b6)
-4. Basics: Fill out the basic information, such as the subscription, resource group, and region. Give your VMSS a unique name.
+
+6. Basics: Fill out the basic information, such as the subscription, resource group, and region. Give your VMSS a unique name.
+
 ![image](https://github.com/user-attachments/assets/616b3436-53f0-4384-9c2e-cd1dff72262e)
 
 # Orchestration Modes in Azure VM Scale Sets
@@ -92,15 +97,21 @@ Flexible orchestration is ideal for applications needing high availability or co
 
 5. Instance Details: Configure instance details, such as the VM image, VM architecture and instance size.
 select the 'gallery image' you created earlier. This is where the power of Compute Gallery comes into play. You can choose the specific version you want to deploy.
+
 ![image](https://github.com/user-attachments/assets/6a4089f4-ff6b-42c4-a53c-743d682fd532)
+
 This will automatically select the VM architecture and VM size that was used in the VM we captured in our compute gallery.
+
 ![image](https://github.com/user-attachments/assets/7131e07a-18cd-498c-bc37-c238515c08d4)
+
 Administrator Account: This is where you setup the username and password of your VMSS, but because we selected the Specialised operating system state when we captured the VM image it is grayed out because we no longer need authentication when we want to scale out.
 
 Make sure you choose a 'licensing type' and check the box to confirm you have an eligible windows license. For the purpose of the VMSS we are to scale, we optioned for 'windows server' since we are scaling out to manage network traffic.
+
 ![image](https://github.com/user-attachments/assets/edd970a8-ac34-461a-bfd2-6638d68ee24b)
 
-6.  Scaling: Configure scaling options based on your application needs.
+6. Scaling: Configure scaling options based on your application needs.
+
 ![image](https://github.com/user-attachments/assets/c8dc90cb-2685-4e94-929c-80fbcd2a0c33)
 
 7. Select 'Custom scaling' so that you can define scaling rules for automatic scaling. Here we define:
@@ -110,21 +121,28 @@ Make sure you choose a 'licensing type' and check the box to confirm you have an
 - Maximum number of instances to **10**.
 - The VMSS to scale out in **5 minutes** once the CPU threshold gets to **75%** by **2 instances**.
 - The VMSS to scale in, in **5 minutes** once the CPU threshold gets to **25%** by **2 instances**.
+
 ![image](https://github.com/user-attachments/assets/50016795-d02f-4474-adfb-e939cbe88e3a)
 ![image](https://github.com/user-attachments/assets/a251122f-13c5-4926-a3bd-53572f537e30)
 
 8. Management: Specify monitoring, diagnostics, and auto-shutdown settings as per your requirements or leave it on default just like I did.
 
 9. Tags: Ensure that your resources are tagged and you can add tags based on your preference.
+
 ![image](https://github.com/user-attachments/assets/bb3f904d-4e82-430b-bb4e-5e82d8c648ea)
 
 10. Review + Create: Review your settings, and when everything looks good, click 'Create' to deploy your VM Scale Set.
+
 ![image](https://github.com/user-attachments/assets/bb16350a-c993-4bd2-a05d-37eb2e8d4483)
+
 ![image](https://github.com/user-attachments/assets/d3cd3296-08c1-4041-9a1f-41217ecbf307)
+
 11. This will take a while, Once deployment is completed, click on 'Go to resource' to access the newly created VMSS.
+
 ![image](https://github.com/user-attachments/assets/efc4566f-6717-4fc3-bf08-52d76f05c410)
     
 This is the newly deployed Virtual Machine Scale Set and you can see 2 initial instance defined during configuration are already running.
+
 ![image](https://github.com/user-attachments/assets/de3f4d85-c352-45b8-8028-8a317adea09b)
 ![image](https://github.com/user-attachments/assets/c4a485a0-c596-4ea5-b58e-72e1c152da89)
 
