@@ -42,7 +42,6 @@ Azure Virtual Machine Scale Sets (VMSS) offer several benefits for managing and 
 
 - **Global Deployment**: Deploy VM instances across multiple Azure regions, improving the resilience and availability of your applications.
 
----
 
 ## Prerequisites
 
@@ -73,8 +72,6 @@ The **orchestration mode** is defined when you create the scale set and cannot b
 a. **Uniform Orchestration**: Optimized for large-scale stateless workloads with identical instances.
 b. **Flexible Orchestration**: Used to achieve high availability at scale, supporting identical or multiple virtual machine types.
 
----
-
 ### Flexible Orchestration
 
 When selecting **Flexible orchestration**, Azure provides a unified experience across the Azure VM ecosystem. Flexible orchestration offers high availability guarantees (up to 1000 VMs) by distributing VMs across fault domains within a region or Availability Zone. This enables you to scale out your application while maintaining fault domain isolation, essential for running quorum-based or stateful workloads.
@@ -90,10 +87,10 @@ When selecting **Flexible orchestration**, Azure provides a unified experience a
 Flexible orchestration is ideal for applications needing high availability or complex deployment requirements, including existing applications previously deployed in Availability Sets.
 
 [Learn more about Azure VM Scale Set Orchestration](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes)
+
 ![image](https://github.com/user-attachments/assets/eb3cfb32-55d9-4da9-86f1-ffa7ccb4f40d)
 
 5. Instance Details: Configure instance details, such as the VM image, VM architecture and instance size.
-
 select the 'gallery image' you created earlier. This is where the power of Compute Gallery comes into play. You can choose the specific version you want to deploy.
 ![image](https://github.com/user-attachments/assets/6a4089f4-ff6b-42c4-a53c-743d682fd532)
 This will automatically select the VM architecture and VM size that was used in the VM we captured in our compute gallery.
@@ -122,13 +119,13 @@ Make sure you choose a 'licensing type' and check the box to confirm you have an
 ![image](https://github.com/user-attachments/assets/bb3f904d-4e82-430b-bb4e-5e82d8c648ea)
 
 10. Review + Create: Review your settings, and when everything looks good, click 'Create' to deploy your VM Scale Set.
-    ![image](https://github.com/user-attachments/assets/bb16350a-c993-4bd2-a05d-37eb2e8d4483)
-    ![image](https://github.com/user-attachments/assets/d3cd3296-08c1-4041-9a1f-41217ecbf307)
+![image](https://github.com/user-attachments/assets/bb16350a-c993-4bd2-a05d-37eb2e8d4483)
+![image](https://github.com/user-attachments/assets/d3cd3296-08c1-4041-9a1f-41217ecbf307)
 11. This will take a while, Once deployment is completed, click on 'Go to resource' to access the newly created VMSS.
-    ![image](https://github.com/user-attachments/assets/efc4566f-6717-4fc3-bf08-52d76f05c410)
+![image](https://github.com/user-attachments/assets/efc4566f-6717-4fc3-bf08-52d76f05c410)
     
 This is the newly deployed Virtual Machine Scale Set and you can see 2 initial instance defined during configuration are already running.
-    ![image](https://github.com/user-attachments/assets/de3f4d85-c352-45b8-8028-8a317adea09b)
+![image](https://github.com/user-attachments/assets/de3f4d85-c352-45b8-8028-8a317adea09b)
 ![image](https://github.com/user-attachments/assets/c4a485a0-c596-4ea5-b58e-72e1c152da89)
 
 # Monitor and Manage Your VMSS
