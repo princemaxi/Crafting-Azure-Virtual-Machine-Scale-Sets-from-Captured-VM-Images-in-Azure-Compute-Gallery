@@ -66,7 +66,7 @@ Before you begin, ensure that you have the following prerequisites in place:
 ![image](https://github.com/user-attachments/assets/ed1808cb-2352-4256-b33e-a1d14b0c5e49)
 
 3. Click on 'Create'.
-y
+
 ![image](https://github.com/user-attachments/assets/caf39d95-89ab-43b8-b65a-ee00bf92e0b6)
 
 4. Basics: Fill out the basic information, such as the subscription, resource group, and region. Give your VMSS a unique name.
